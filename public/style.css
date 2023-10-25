@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.box{
+    position: relative;
+}
+.my-shadow{
+ height: 100%;
+  background: rgb(42, 144, 221);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .4s;
+}
+
+.box:hover .my-shadow{
+    top:0;
+    opacity: .8;
+}
+
